@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div id="startScreen">
+  <div>
+    <h1>Escape the Maze</h1>
+  </div>
+  <div>
+    <p>1. Go to the yellow zone.<br>
+      2. Press <span style= 'color: red' font-weight: bold>Play</span> to start.<br>
+      3. Press <span>&uarr; &darr; &larr; &rarr;</span>to move.</p>
+  </div>
+</div>
+<canvas id="myCanvas" width="500" height="500" style="border:1px solid #000000;">
+</canvas>
+
+<script src="gameCanvas.js">
+</script>
+<div class='play'>
+    <input id="play" type="button" onclick="button_click();" value="Play"/>
+</div>
+<div class="time">
+    <p>Time</p><label id="minutes">00</label>:<label id="seconds">00</label>
+</div>
+</body>
+</html>
+<style>
+    .play{
+        position: absolute;
+        top: 155px;
+        left: 10px;         
+    }
+    .time{
+      position: absolute;
+      top: 140px;
+      left: 450px;
+      color: white;
+    }
