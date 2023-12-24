@@ -1,0 +1,40 @@
+/* 
+ED7D31 highlight
+6C5F5B sim
+4F4A45 bg color
+F6F1EE text
+*/
+
+* {
+    background-color: #4F4A45;
+}
+
+.icon {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-container {
+    display: grid;
+    margin: 0 15px 30px;
+    width: 60px;
+    height: 60px;
+    color: #F6F1EE;
+    text-align: center;
+    align-items: center;
+    box-sizing: border-box;
+    border: 3px solid #F6F1EE;
+    border-radius: 10px;
+}
+
+.icon-container i{
+    font-size: 2rem;
+}
+
+.icon-container:hover {
+    box-shadow: 0 0 10px 1px #ED7D31;
+    transform: scale(1.2);
+    transition: transform .3s ease;
+}
